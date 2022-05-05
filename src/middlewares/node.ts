@@ -1,7 +1,7 @@
 import { CHAIN_ID, DOCKER_NETWORK, MASTER_ACCOUNT_SEED, NODE_API_PORT, NODE_URL } from '../constants';
 import { isRunImage, remove, run, stop } from '../utils/docker';
 
-const NODE_IMAGE = 'wavesplatform/waves-private-node';
+const NODE_IMAGE = 'runitcr/dcc';
 
 export default async (ctx: any, next: any) => {
     console.info(`NODE_URL ${NODE_URL}`);

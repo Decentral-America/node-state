@@ -1,8 +1,8 @@
-## Library for create unit test with WAVESPLATFORM node
+## Library for create unit test with a DecentralChain node
 
 ### install
 
-`npm install @waves/node-state -D`
+`npm install @decentralchain/node-state -D`
 
 ### Usage
 
@@ -27,7 +27,7 @@ Options:
 #### Step 2. Write some tests with some test framework
 ```typescript
 import { NODE_URL, STATE, CHAIN_ID, MASTER_ACCOUNT } from './test/state.ts';
-import { transfer, broadcast, waitForTx } from '@waves/waves-transactions';
+import { transfer, broadcast, waitForTx } from '@decentralchain/waves-transactions';
 
 
 it('Create transfer transaction', async () => {
@@ -43,7 +43,7 @@ it('Create transfer transaction', async () => {
 #### Example of output file (test/state.ts) in typescript:
 ```typescript
 export const MASTER_ACCOUNT = {
-    "SEED": "waves private node seed with waves tokens",
+    "SEED": "Decentralchain private node seed with DCC tokens",
     "ADDRESS": "3M4qwDomRabJKLZxuXhwfqLApQkU592nWxF",
     "PUBLIC_KEY": "AXbaBkJNocyrVpwqTzD4TpUY8fQ6eeRto9k1m2bNCzXV",
     "ALIAS": "master"
@@ -113,7 +113,7 @@ export const STATE = {
       "id": "EeojFwKrozm9mpHvmYt6N5qnwhGTo8ztXpxogcHHYw8s"
     },
     "MASTER_ACCOUNT": {
-      "SEED": "waves private node seed with waves tokens",
+      "SEED": "Decentralchain private node seed with DCC tokens",
       "ADDRESS": "3M4qwDomRabJKLZxuXhwfqLApQkU592nWxF",
       "PUBLIC_KEY": "AXbaBkJNocyrVpwqTzD4TpUY8fQ6eeRto9k1m2bNCzXV",
       "ALIAS": "master"

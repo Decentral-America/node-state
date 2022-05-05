@@ -1,10 +1,13 @@
 {
-  "name": "@waves/node-state",
+  "name": "@decentralchain/node-state",
   "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "bin": {
     "node-state": "dist/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "prepare": "tsc",
@@ -15,7 +18,7 @@
     "name": "Tsigel"
   },
   "repository": {
-    "url": "https://github.com/wavesplatform/node-state",
+    "url": "https://github.com/Decentral-America/node-state",
     "type": "git"
   },
   "license": "ISC",
@@ -33,7 +36,7 @@
     "@types/fs-extra": "^8.0.1",
     "@types/yargs": "^16.0.3",
     "@waves/ts-types": "1.0.2",
-    "@waves/waves-transactions": "^4.1.8",
+    "@decentralchain/waves-transactions": "4.2.3",
     "cli-color": "^2.0.0",
     "dotenv": "^8.2.0",
     "fs-extra": "^8.1.0",
